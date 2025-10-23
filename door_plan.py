@@ -3,7 +3,7 @@ import pandas as pd
 import io
 import zipfile
 
-st.title("🏗️ Door Delivery Planner")
+st.title("Door Delivery Planner")
 
 st.write("Upload your door data Excel file and configure weekly delivery details.")
 
@@ -57,9 +57,9 @@ if uploaded_file:
                 start = end
         buffer.seek(0)
 
-        st.success("✅ Weekly plans generated successfully!")
+        st.success("Weekly plans generated successfully!")
         st.download_button(
-            label="📦 Download ZIP file",
+            label="Download ZIP file",
             data=buffer,
             file_name="Weekly_Plans.zip",
             mime="application/zip"
