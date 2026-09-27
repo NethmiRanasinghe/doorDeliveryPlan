@@ -90,7 +90,7 @@ paths:
         - petstore_auth:
             - write:pets
             - read:pets
-    post:
+    pos:
       tags:
         - pet
       summary: Add a new pet to the store.
@@ -708,18 +708,6 @@ components:
           type: boolean
       xml:
         name: order
-    Category:
-      type: object
-      properties:
-        id:
-          type: integer
-          format: int64
-          example: 1
-        name:
-          type: string
-          example: Dogs
-      xml:
-        name: category
     User:
       type: object
       properties:
