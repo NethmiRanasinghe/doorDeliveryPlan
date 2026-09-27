@@ -90,7 +90,7 @@ paths:
         - petstore_auth:
             - write:pets
             - read:pets
-    post:
+    pos:
       tags:
         - pet
       summary: Add a new pet to the store.
